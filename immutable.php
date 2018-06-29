@@ -42,8 +42,9 @@ class Immutable
                 $clone_object->object = $setter;
                 return $clone_object;
             } else {
-                // echo "新しいインスタンス生成\n";
-                return new Immutable($setter);
+                // echo "cloneして新しいインスタンス生成\n";
+                $this->property = $setter;
+                return clone $this;
             }
         } else {
             // echo "プロパティのセット\n";

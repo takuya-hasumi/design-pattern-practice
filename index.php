@@ -10,7 +10,7 @@ $immutable->setProperty("変えちゃうよ？");
 // オブジェクトのパターン
 $setObject = new Immutable($immutable);
 $setObject->setProperty("clone version");
-$setObject->setProperty("re: property");
+$property_cloned_object = $setObject->setProperty("re: property");
 $clone_immutable = $setObject->setProperty($immutable);
 $clone_setObject = $setObject->setProperty($setObject);
 
