@@ -1,12 +1,12 @@
 <?php
-
 /**
  * 要件
  * 1. 最初一回だけ値セット
  * 2. 変えられない
  * 3. 変えようとしたらコピーされる（ディープコピー）
+ * Immutableってどういうときに使うの？
+ * → Serviceとか
  */
-
 class Immutable
 {
     private $property;
@@ -31,6 +31,8 @@ class Immutable
         return $this->property;
     }
 
+    // 名前ちゃんとつけよう
+    // 複雑　もっとシンプルに
     public function setProperty($setter)
     {
         if (isset($this->property)) {
@@ -42,7 +44,8 @@ class Immutable
                 $clone_object->object = $setter;
                 return $clone_object;
             } else {
-                // echo "cloneして新しいインスタンス生成\n";
+                echo "cloneして新しいインスタンス生成\n";
+                // cloneの順番がおかしい
                 $this->property = $setter;
                 return clone $this;
             }
