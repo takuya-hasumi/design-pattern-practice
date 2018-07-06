@@ -1,6 +1,6 @@
 <?php
 
-require_once("./immutable.php");
+require_once("./immutable/immutable.php");
 // オブジェクトにセット
 $immutable = new Immutable("test");
 $value = $immutable->getProperty(); // test
