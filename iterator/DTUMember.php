@@ -9,6 +9,7 @@ class DTUMember
         $this->name = $name;
     }
 
+    // 名前を返却
     public function getName()
     {
         return $this->name;

@@ -7,9 +7,9 @@
 
 interface DTUIterator
 {
-    // 次があるかチェックする抽象メソッド
+    // 次のオブジェクトがあるかチェックする抽象メソッド
     public function hasNext();
     
-    // 次を返す抽象メソッド
+    // 次のオブジェクトを返す抽象メソッド
     public function next();
 }

@@ -10,15 +10,17 @@ class DTUMemberIterator implements DTUIterator
         $this->dtu_member = $dtu_member;
     }
 
+    // 次のオブジェクトがあるか判定
     public function hasNext()
     {
-        if ($this->index < $this->dtu_member->getLength()) {
+        if ($this->index < $this->dtu_member->getScale()) {
             return true;
         } else {
             return false;
         }
     }
 
+    // 次のオブジェクトを取得
     public function next()
     {
         $next_member = $this->dtu_member->getMember($this->index);
