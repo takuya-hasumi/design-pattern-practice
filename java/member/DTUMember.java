@@ -1,9 +1,9 @@
-package dtumember;
+package member;
 
 /**
  * DTUMember
  */
-public class DTUMember {
+public class DTUMember implements Member {
 
     public String name;
 

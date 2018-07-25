@@ -1,6 +1,6 @@
 import oreoreiterator.DTUIterator;
 import oreorecollection.DTUCollection;
-import dtumember.DTUMember;
+import member.DTUMember;
 
 public class main {
     public static void main(String[] arg) {

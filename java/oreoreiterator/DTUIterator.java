@@ -1,7 +1,7 @@
 package oreoreiterator;
 
 import oreorecollection.DTUCollection;
-import dtumember.DTUMember;
+import member.DTUMember;
 
 /**
  * DTUIterator

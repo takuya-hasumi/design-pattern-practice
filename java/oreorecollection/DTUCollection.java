@@ -1,7 +1,7 @@
 package oreorecollection;
 
 import oreoreiterator.DTUIterator;
-import dtumember.DTUMember;
+import member.DTUMember;
 import java.util.ArrayList;
 
 /**
