@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * DTUCollection
  */
 public class DTUCollection implements Collection{
-    public ArrayList<DTUMember> members = new ArrayList<DTUMember>();
+    private ArrayList<DTUMember> members = new ArrayList<DTUMember>();
     public int scale = 0;
 
     /**

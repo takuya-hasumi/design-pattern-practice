@@ -8,7 +8,9 @@ public class main {
         DTUCollection dtuCollection = new DTUCollection();
         // DTU組織にメンバーを追加
         dtuCollection.addMember(new DTUMember("はすみ"));
-        dtuCollection.addMember(new DTUMember("たくや"));
+        dtuCollection.addMember(new DTUMember("おばた"));
+        dtuCollection.addMember(new DTUMember("やまもと"));
+        dtuCollection.addMember(new DTUMember("すもも"));
 
         // DTU組織のイテレータを取得
         DTUIterator iterator = dtuCollection.getIterator();

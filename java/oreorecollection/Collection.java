@@ -1,9 +1,12 @@
 package oreorecollection;
 
+import oreoreiterator.AreIterator;
+
 /**
  * Collection
  */
 public interface Collection {
     // 抽象メソッド
-    Object getIterator();
+    // iterator型
+    AreIterator getIterator();
 }
