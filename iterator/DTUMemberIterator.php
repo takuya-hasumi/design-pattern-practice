@@ -1,6 +1,7 @@
 <?php
+require_once("./iterator/AreIterator.php");
 
-class DTUMemberIterator implements DTUIterator
+class DTUMemberIterator implements AreIterator
 {
     private $dtu_member;
     private $index = 0;

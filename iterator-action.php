@@ -1,8 +1,5 @@
 <?php
-require_once("./iterator/DTUCollection.php");
 require_once("./iterator/DTUMemberCollection.php");
-require_once("./iterator/DTUIterator.php");
-require_once("./iterator/DTUMemberIterator.php");
 require_once("./iterator/DTUMember.php");
 
 // DTU組織という箱を作成
@@ -18,7 +15,7 @@ $dtu_member_collection->addMember(new DTUMember("ぱぱみん"));
 $iterator = $dtu_member_collection->getIterator();
 
 // DTU組織を数え上げられるようになったオブジェクトに対して、
-// 次のメンバーが存在するならメンバーオブジェクトを取得し
+// 次のメンバーが存在するならメンバーオブジェクトを取得し、
 // 処理をできるようにする（今回は名前）
 while ($iterator->hasNext()) {
     $member = $iterator->next();

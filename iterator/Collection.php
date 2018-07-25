@@ -3,7 +3,7 @@
  * 集約オブジェクト
  */
 
-interface DTUCollection
+interface Collection
 {
     // Iteratorを呼び出す抽象メソッド
     public function getIterator();

@@ -1,6 +1,8 @@
 <?php
+require_once("./iterator/Collection.php");
+require_once("./iterator/DTUMemberIterator.php");
 
-class DTUMemberCollection implements DTUCollection 
+class DTUMemberCollection implements Collection
 {
     private $members = [];
     private $scale = 0;
