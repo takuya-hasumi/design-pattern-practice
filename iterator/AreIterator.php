@@ -5,7 +5,7 @@
  * コレクションクラス（配列）とかのときに、共通処理として取れる（色んな型や注文にも応えられる）
  */
 
-interface DTUIterator
+interface AreIterator
 {
     // 次のオブジェクトがあるかチェックする抽象メソッド
     public function hasNext();
