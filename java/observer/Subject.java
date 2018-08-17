@@ -10,11 +10,14 @@ public class Subject {
     
     public void notifyObserver(int sum) {
         if ((sum % 5 == 0) && (sum % 3 == 0)) {
-            JuuuuusticeObserver.viewJuuuuustice();
+            JuuuuusticeObserver juuuuustice_observer = new JuuuuusticeObserver();
+            juuuuustice_observer.notice();
         } else if (sum % 5 == 0) {
-            SanshaiiiiinObserver.viewSanshaiiiiin();
+            SanshaiiiiinObserver sanshaiiiiin_observer = new SanshaiiiiinObserver();
+            sanshaiiiiin_observer.notice();
         } else if (sum % 3 == 0) {
-            YeaaaaahObserver.viewYeaaaaah();
+            YeaaaaahObserver yeaaaaah_observer = new YeaaaaahObserver();
+            yeaaaaah_observer.notice();
         }
     }
 
