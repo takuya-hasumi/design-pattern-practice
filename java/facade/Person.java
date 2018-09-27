@@ -11,7 +11,7 @@ public abstract class Person {
      * worksフィールドにタスクをセット
      */
     protected void setWork(Person person, HashMap task) {
-        person.works = task;
+        this.works = task;
     }
     
     /**
